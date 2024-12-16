@@ -1,0 +1,93 @@
+
+@font-face {
+  font-display: swap;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/unbounded-200.woff2') format('woff2'),
+       url('../fonts/unbounded-200.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/unboundedn-300.woff2') format('woff2'),
+       url('../fonts/unbounded-300.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/unbounded-regular.woff2') format('woff2'),
+       url('../fonts/unbounded-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/unbounded-600.woff2') format('woff2'),
+       url('../fonts/unbounded-600.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/unbounded-700.woff2') format('woff2'),
+       url('../fonts/unbounded-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'BertSansRegular';
+  font-style: normal;
+  src: url('../fonts/BertSansRegular.eot');
+  src: url('../fonts/BertSansRegular.eot') format('embedded-opentype'),
+       url('../fonts/BertSansRegular.woff2') format('woff2'),
+       url('../fonts/BertSansRegular.woff') format('woff'),
+       url('../fonts/BertSansRegular.ttf') format('truetype'),
+       url('../fonts/BertSansRegular.svg#BertSansRegular') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'BertSansMedium';
+  font-style: normal;
+  src: url('../fonts/BertSansMedium.eot');
+  src: url('../fonts/BertSansMedium.eot') format('embedded-opentype'),
+       url('../fonts/BertSansMedium.woff2') format('woff2'),
+       url('../fonts/BertSansMedium.woff') format('woff'),
+       url('../fonts/BertSansMedium.ttf') format('truetype'),
+       url('../fonts/BertSansMedium.svg#BertSansMedium') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'BertSansSemiBold';
+  font-style: normal;
+  src: url('../fonts/BertSansSemiBold.eot');
+  src: url('../fonts/BertSansSemiBold.eot') format('embedded-opentype'),
+       url('../fonts/BertSansSemiBold.woff2') format('woff2'),
+       url('../fonts/BertSansSemiBold.woff') format('woff'),
+       url('../fonts/BertSansSemiBold.ttf') format('truetype'),
+       url('../fonts/BertSansSemiBold.svg#BertSansSemiBold') format('svg');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'BertSansBold';
+  font-style: normal;
+  src: url('../fonts/BertSansBold.eot');
+  src: url('../fonts/BertSansBold.eot') format('embedded-opentype'),
+       url('../fonts/BertSansBold.woff2') format('woff2'),
+       url('../fonts/BertSansBold.woff') format('woff'),
+       url('../fonts/BertSansBold.ttf') format('truetype'),
+       url('../fonts/BertSansBold.svg#BertSansBold') format('svg');
+}

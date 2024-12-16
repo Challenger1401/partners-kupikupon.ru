@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  color: var(--c-black);
+  text-align: center;
+  font-family: var(--ff-secondary);
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 20px;
+  background-color: var(--c-green);
+  backdrop-filter: blur(68.25px);
+  border: 0;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.button-blue {
+  background-color: #37B3F8;
+}
+
+.button:disabled {
+  color: var(--c-black);
+  pointer-events: none;
+  background-color: #6B6B6B;
+}

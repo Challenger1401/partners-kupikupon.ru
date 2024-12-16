@@ -1,0 +1,100 @@
+.form-control {
+  display: block;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--c-white);
+  border-radius: 30px;
+  background-color: #252525;
+  backdrop-filter: blur(68.25px);
+  border: 1px solid #252525;
+  padding: 16px 26px;
+  width: 100%;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, .5);
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_0_6617)'%3E%3Cpath d='M9.53674e-06 5.83287C-0.00062561 5.7232 0.0203953 5.61448 0.0618668 5.51295C0.103336 5.41142 0.164442 5.31907 0.241676 5.24121C0.319145 5.1631 0.411312 5.10111 0.512861 5.0588C0.61441 5.01649 0.723333 4.99471 0.833342 4.99471C0.943352 4.99471 1.05227 5.01649 1.15382 5.0588C1.25537 5.10111 1.34754 5.1631 1.42501 5.24121L8.23334 12.0495C8.70209 12.5177 9.33751 12.7807 10 12.7807C10.6625 12.7807 11.2979 12.5177 11.7667 12.0495L18.575 5.24121C18.7319 5.08429 18.9448 4.99613 19.1667 4.99613C19.3886 4.99613 19.6014 5.08429 19.7583 5.24121C19.9153 5.39813 20.0034 5.61096 20.0034 5.83287C20.0034 6.05479 19.9153 6.26762 19.7583 6.42454L12.95 13.2329C12.563 13.6209 12.1032 13.9288 11.597 14.1388C11.0907 14.3489 10.5481 14.457 10 14.457C9.45195 14.457 8.90927 14.3489 8.40306 14.1388C7.89685 13.9288 7.43706 13.6209 7.05001 13.2329L0.241676 6.42454C0.164442 6.34667 0.103336 6.25433 0.0618668 6.1528C0.0203953 6.05127 -0.00062561 5.94255 9.53674e-06 5.83287Z' fill='%23929292'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_0_6617'%3E%3Crect width='20' height='20' fill='white' transform='matrix(0 1 -1 0 20 -0.000457764)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center right 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--c-white);
+  border-radius: 30px;
+  background-color: #252525;
+  backdrop-filter: blur(68.25px);
+  border: 1px solid #252525;
+  padding: 16px 26px;
+  width: 100%;
+}
+
+.form-control:required,
+.form-select:required {
+  border-color: rgba(0, 214, 120, 0.70);
+}
+
+.custom-checkbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox>span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.custom-checkbox>span::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba(255, 255, 255, 0.70);
+  border-radius: 3px;
+  margin-right: 11px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox>input:not(:disabled):active+span::before {
+  background-color: rgba(255, 255, 255, 0.70);
+  border-color: rgba(255, 255, 255, 0.70);
+}
+
+.custom-checkbox>input:checked+span::before {
+  border-color: var(--c-green);
+  background-color: var(--c-green);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox>input:disabled+span::before {
+  background-color: #e9ecef;
+}

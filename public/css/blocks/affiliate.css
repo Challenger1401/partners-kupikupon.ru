@@ -1,0 +1,92 @@
+.b-affiliate__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  background: #1A1A1A;
+  padding: 50px 28px 21px;
+  position: relative;
+  text-align: center;
+}
+
+.b-affiliate__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.b-affiliate__item-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.b-affiliate__item-logo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+.b-affiliate__item-text {
+  line-height: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.b-affiliate__item-vk {
+  background: #0177FF;
+}
+
+.b-affiliate__item-vk .b-affiliate__item-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.b-affiliate__item-wb {
+  background: #8025EE;
+}
+
+.b-affiliate__item-wb .b-affiliate__item-logo {
+  top: 20px;
+  width: 156px;
+  height: 24px;
+}
+
+.b-affiliate__item-alfabank {
+  background: #EF3124;
+}
+
+.b-affiliate__item-alfabank .b-affiliate__item-logo {
+  width: 58px;
+  height: 58px;
+}
+
+.b-affiliate__item-gorod {
+  background: #E58900;
+}
+
+.b-affiliate__item-gorod .b-affiliate__item-logo {
+  top: 20px;
+  width: 117px;
+  height: 29px;
+}
+
+@media (width >=768px) {
+  .b-affiliate__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .b-affiliate__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >=960px) {
+  .b-affiliate__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

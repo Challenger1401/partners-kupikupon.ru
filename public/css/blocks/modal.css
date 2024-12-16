@@ -1,0 +1,65 @@
+.modal {
+  background: rgba(245, 245, 245, 0.20);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.modal__wrap {
+  position: absolute;
+  max-width: 414px;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background: #1A1A1A;
+  cursor: default;
+  padding: 5px;
+}
+
+.modal__inner {
+  border-radius: 20px;
+  border: 1px dashed #00D678;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.modal__inner::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  bottom: 15px;
+  background-image: url("../../images/heart.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 116px;
+  height: 119px;
+}
+
+.modal__title {
+  font-family: var(--ff-third);
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.modal__subtitle {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.button-success {
+  position: relative;
+  z-index: 2;
+}

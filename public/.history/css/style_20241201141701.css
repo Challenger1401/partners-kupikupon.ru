@@ -1,0 +1,26 @@
+@import "reset.css";
+@import "variables.css";
+@import "fonts.css";
+@import "global.css";
+@import "layout.css";
+
+@import "blocks/header.css";
+@import "blocks/hero.css";
+@import "blocks/facts.css";
+@import "blocks/companies.css";
+@import "blocks/tasks.css";
+@import "blocks/traffic.css";
+@import "blocks/mobileapp.css";
+@import "blocks/affiliate.css";
+@import "blocks/tools.css";
+@import "blocks/media.css";
+@import "blocks/audience.css";
+@import "blocks/scheme.css";
+@import "blocks/reviews.css";
+@import "blocks/accordion.css";
+@import "blocks/team.css";
+@import "blocks/form.css";
+@import "blocks/footer.css";
+
+@import "components/buttons.css";
+@import "components/form.css";

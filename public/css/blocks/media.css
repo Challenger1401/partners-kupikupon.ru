@@ -1,0 +1,25 @@
+.b-media__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: #1A1A1A;
+  height: 73px;
+  padding: 10px;
+}
+
+.b-media__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (width >=768px) {
+  .b-media__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .b-media__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}

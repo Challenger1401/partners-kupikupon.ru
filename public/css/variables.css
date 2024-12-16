@@ -1,0 +1,29 @@
+/*
+  CSS variables naming
+
+  --ff-: font-family;
+  --fsz-: font-size;
+  --fwg-: font-weight;
+  --flh-: line-height;
+  --c-: color;
+  --w-: width;
+  --gap-: gap;
+  --sp-: spacing;
+  --br-: border-radius;
+*/
+
+:root {
+  --c-white: #F5F5F5;
+  --c-black: #090808;
+  --c-green: #1DD873;
+
+  --ff-primary: "BertSansRegular", sans-serif;
+  --ff-secondary: "BertSansSemiBold", sans-serif;
+  --ff-third: "Unbounded", sans-serif;
+  --ff-fourth: "BertSansBold", sans-serif;
+  --ff-fifth: "BertSansMedium", sans-serif;
+
+  --br-30: 30px;
+
+  --w-990: 990px;
+}

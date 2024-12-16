@@ -1,0 +1,140 @@
+.b-team__item {
+  text-align: center;
+}
+
+.b-team__item-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.b-team__item-img--boss {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.b-team__item-name {
+  font-family: var(--ff-third);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.b-team__item-name span {
+  display: block;
+  color: #00D678;
+}
+
+@media (min-width: 768px) and (max-width: 1099.98px) {
+  .b-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  
+  .b-team__item {
+    width: calc(25% - 18px);
+  }
+
+  .b-team__item:last-child {
+    width: 100%;
+  }
+}
+
+@media (width >=1100px) {
+  .b-team__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .b-team__item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .b-team__item:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  .b-team__item:nth-child(3) {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  
+  .b-team__item:nth-child(4) {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  
+  .b-team__item:nth-child(5) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  .b-team__item:nth-child(6) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  
+  .b-team__item:nth-child(7) {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  
+  .b-team__item:nth-child(8) {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  
+  .b-team__item:nth-child(9) {
+    grid-area: 1 / 5 / 3 / 6;
+  }
+}
+
+@media (width <=767px) {
+  .b-team__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .b-team__item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .b-team__item:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  .b-team__item:nth-child(3) {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  
+  .b-team__item:nth-child(4) {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  
+  .b-team__item:nth-child(5) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  .b-team__item:nth-child(6) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  
+  .b-team__item:nth-child(7) {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  
+  .b-team__item:nth-child(8) {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  
+  .b-team__item:nth-child(9) {
+    grid-area: 1 / 5 / 3 / 6;
+  }
+}

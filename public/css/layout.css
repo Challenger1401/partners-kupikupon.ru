@@ -1,0 +1,138 @@
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  right: 390px;
+  top: -400px;
+  width: 568.848px;
+  height: 568.848px;
+  border-radius: 568.848px;
+  background: #0DC3A2;
+  filter: blur(210px);
+  z-index: -1;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  right: -600px;
+  top: -400px;
+  width: 905.288px;
+  height: 905.288px;
+  border-radius: 905.288px;
+  background: #0292B4;
+  filter: blur(185px);
+  z-index: -1;
+}
+
+.container {
+  width: min(100%, 1325px);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.section {
+  padding-block: 30px;
+}
+
+.w-990 {
+  max-width: var(--w-990);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b-text-gradient {
+  font-family: var(--ff-third);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 70px;
+  color: var(--c-white);
+}
+
+.b-text-gradient span {
+  background-color: #0DB669;
+  background-image: linear-gradient(to right, #0292B4 0%, #0DB68D 44%, #0DB669 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.b-gotokk {
+  padding-bottom: 66px;
+  text-align: center;
+}
+
+.b-gotokk .b-text-gradient {
+  display: inline-block;
+  position: relative;
+}
+
+.b-gotokk .b-text-gradient::after {
+  content: "";
+  background-image: url("../images/cursor.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -110px;
+  top: -8px;
+  width: 175px;
+  height: 199px;
+}
+
+.state-hidden {
+  overflow: hidden;
+}
+
+.color-green {
+  color: var(--c-green);
+}
+
+@media (width >=768px) {
+  .wrapper {
+    padding-top: 108px;
+  }
+
+  .section {
+    padding-block: 75px;
+  }
+}
+
+@media (width <=767px) {
+  .horizontal-scroll {
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .horizontal-scroll::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='93' height='8' viewBox='0 0 93 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M92.3536 4.35355C92.5488 4.15829 92.5488 3.84171 92.3536 3.64645L89.1716 0.464466C88.9763 0.269204 88.6597 0.269204 88.4645 0.464466C88.2692 0.659728 88.2692 0.976311 88.4645 1.17157L91.2929 4L88.4645 6.82843C88.2692 7.02369 88.2692 7.34027 88.4645 7.53553C88.6597 7.7308 88.9763 7.7308 89.1716 7.53553L92.3536 4.35355ZM0 4.5H92V3.5H0V4.5Z' fill='%2300D678'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: absolute;
+    width: 92px;
+    height: 8px;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+  }
+
+  .b-gotokk .b-text-gradient {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .b-gotokk .b-text-gradient::after {
+    right: -50px;
+    top: 12px;
+  }
+}
