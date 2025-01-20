@@ -127,7 +127,7 @@ enterlead($_POST);
                     </svg>
                 </div>
                 <div class="header__button">
-                    <a href="#form" class="button button-green">Начать сотрудничество</a>
+                    <a href="#form" class="button button-green" onclick="ym(98975071,'reachGoal','startcollaboration'); return true;">Начать сотрудничество</a>
                 </div>
                 <div class="header__menu">
                     <div class="header__menu-inner">
@@ -219,7 +219,7 @@ enterlead($_POST);
                             <div class="b-hero__top-col">
                                 <div class="b-hero__top-subtitle">15 лет помогаем различным бизнесам находить новых клиентов и
                                     укреплять позиции на рынке</div>
-                                <div class="b-hero__top-button"><a class="button button-green" href="#form">Начать сотрудничество</a>
+                                <div class="b-hero__top-button"><a class="button button-green" href="#form" onclick="ym(98975071,'reachGoal','startcollaboration'); return true;">Начать сотрудничество</a>
                                 </div>
                             </div>
                             <div class="b-hero__top-col">
@@ -1328,7 +1328,7 @@ enterlead($_POST);
                           данных, указанных в заявке, и подтверждаю, что данные введены верно</span>
                                         </label>
                                     </div>
-                                    <button type="submit" class="button button-green">Отправить заявку</button>
+                                    <button type="submit" class="button button-green" onclick="ym(98975071,'reachGoal','sendrequest'); return true;">Отправить заявку</button>
                                 </div>
                                 <div class="b-form__col b-form__col-tariff w-50">
                                     <div class="b-form__col-tariff--link"><a href="https://kupikupon.ru/files/kk_lite_pricelist.pdf"
