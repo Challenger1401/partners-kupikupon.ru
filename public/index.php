@@ -219,7 +219,7 @@ enterlead($_POST);
                             <div class="b-hero__top-col">
                                 <div class="b-hero__top-subtitle">15 лет помогаем различным бизнесам находить новых клиентов и
                                     укреплять позиции на рынке</div>
-                                <div class="b-hero__top-button"><a class="button button-green" href="#form" onclick="ym(98975071,'reachGoal','startcollaboration'); return true;">Начать сотрудничество</a>
+                                <div class="b-hero__top-button"><a class="button button-green" href="#form-title" onclick="ym(98975071,'reachGoal','startcollaboration'); return true;">Начать сотрудничество</a>
                                 </div>
                             </div>
                             <div class="b-hero__top-col">
@@ -1272,7 +1272,7 @@ enterlead($_POST);
                         </div>
                         <div class="b-form__head-image"><img src="images/paper.png" alt=""></div>
                     </div>
-                    <div class="b-form__title">Заполни форму и мы обязательно свяжемся с тобой!</div>
+                    <div id="form-title" class="b-form__title">Заполни форму и мы обязательно свяжемся с тобой!</div>
                     <div class="b-form__subtitle">Поля, выделенные <span>зелёной рамкой, обязательны для заполнения</span></div>
                     <div class="b-form__inner">
                         <form action="/" method="post">
@@ -1497,7 +1497,7 @@ enterlead($_POST);
                             <li><a href="#tools">Инструменты</a></li>
                             <li><a href="#reviews">Отзывы</a></li>
                             <li><a href="#faq">Вопросы</a></li>
-                            <li><a href="#form">Контакты</a></li>
+                            <li><a href="#form-title"">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
