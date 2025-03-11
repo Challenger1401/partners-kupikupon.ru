@@ -32,4 +32,7 @@ function enterlead($post){
     //die(var_dump($httpcode));
 }
 
+$RECAPTCHA_SITE_KEY = '';
+$RECAPTCHA_SECRET_KEY = '';
+
 ?>
