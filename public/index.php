@@ -1,6 +1,6 @@
 <?php
 require_once '../app/enterlead.php';
-enterlead($_POST);
+//enterlead($_POST);
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,6 +56,15 @@ enterlead($_POST);
 <noscript><div><img src="https://mc.yandex.ru/watch/98975071" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?173',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1931337-g9b81"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1931337-g9b81" style="position:fixed; left:-999px;" alt=""/></noscript>
+<script src="https://www.google.com/recaptcha/api.js?render=<?=$RECAPTCHA_SITE_KEY;?>"></script>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('<?=$RECAPTCHA_SITE_KEY;?>').then(function (token) {
+            var recaptchaResponse = document.getElementById('recaptchaResponse');
+            recaptchaResponse.value = token;
+        });
+    });
+</script>
 <body>
 <div class="wrapper">
     <header class="header">
@@ -1291,6 +1300,7 @@ enterlead($_POST);
                     <div class="b-form__subtitle">Поля, выделенные <span>зелёной рамкой, обязательны для заполнения</span></div>
                     <div class="b-form__inner">
                         <form action="/" method="post">
+                            <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
                             <div class="b-form__row">
                                 <div class="b-form__col">
                                     <div class="form-group">

@@ -32,7 +32,26 @@ function enterlead($post){
     //die(var_dump($httpcode));
 }
 
-$RECAPTCHA_SITE_KEY = '';
-$RECAPTCHA_SECRET_KEY = '';
+$RECAPTCHA_SITE_KEY = '6LdMIPEqAAAAANedvARceO_WNM-3nCmdNpwCiFqA';
+$RECAPTCHA_SECRET_KEY = '6LdMIPEqAAAAAPJq3YWAVDH7T88VkKa25BDDcI7g';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptchaResponse'])) {
+
+    // Задаем параметры
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_secret = $RECAPTCHA_SECRET_KEY;
+    $recaptcha_response = $_POST['recaptchaResponse'];
+
+    // Обрабатываем параметры
+    $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+    $recaptcha = json_decode($recaptcha);
+
+    // Выводим результат исходя из полученных данных
+    if ($recaptcha->score >= 0.5) {
+        enterlead($_POST);
+    } else {
+        // Код вывода ошибки
+    }
+}
 
 ?>
