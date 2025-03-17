@@ -71,3 +71,45 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
     });
   });
 });
+
+var swiper1 = new Swiper(".swiper-cases", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next-1",
+    prevEl: ".swiper-button-prev-1",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    1285: {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    },
+  },
+});
+
+var swiper2 = new Swiper(".swiper-tariffs", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1285: {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+    },
+  },
+});
