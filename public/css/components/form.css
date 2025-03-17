@@ -98,18 +98,3 @@ textarea {
 .custom-checkbox>input:disabled+span::before {
   background-color: #e9ecef;
 }
-
-.form-group {
-  padding-top: 20px;
-  position: relative;
-}
-
-.valid-feedback {
-  color: rgba(0, 214, 120, .7);
-  font-family: var(--ff-primary);
-  font-size: 11px;
-  font-weight: 400;
-  position: absolute;
-  right: 0;
-  top: 0;
-}

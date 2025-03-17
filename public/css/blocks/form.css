@@ -2,6 +2,10 @@
   margin-bottom: 30px;
 }
 
+.b-form__col:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .b-form__head {
   margin-bottom: 44px;
   position: relative;
@@ -109,7 +113,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    column-gap: 10px;
+    gap: 10px;
   }
 
   .b-form__col {
@@ -126,6 +130,10 @@
 
   .b-form__col.w-100 {
     width: 100%;
+  }
+
+  .b-form__col:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .b-form__col-tariff {

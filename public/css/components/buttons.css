@@ -10,16 +10,19 @@
   white-space: nowrap;
   border-radius: 20px;
   background-color: var(--c-green);
-  backdrop-filter: blur(68.25px);
   border: 0;
   cursor: pointer;
   transition: all .15s ease-in-out;
-  position: relative;
   text-transform: uppercase;
 }
 
 .button-blue {
   background-color: #37B3F8;
+}
+
+.button-yellow {
+  background-color: #FFEA2E;
+  border-radius: 10px;
 }
 
 .button:disabled {
