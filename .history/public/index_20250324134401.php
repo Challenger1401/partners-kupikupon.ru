@@ -23,7 +23,7 @@ require_once '../app/enterlead.php';
 
     <!-- end -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -1984,3 +1984,4 @@ require_once '../app/enterlead.php';
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
+>>>>>>> 321a697 (add new design css/html/js)
