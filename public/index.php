@@ -1752,6 +1752,7 @@
               <div class="b-form__subtitle">Поля, выделенные <span>зелёной рамкой, обязательны для заполнения</span></div>
               <div class="b-form__inner">
                 <form action="/" method="post">
+                  <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
                   <div class="b-form__row">
                     <div class="b-form__col">
                       <div class="form-group">
