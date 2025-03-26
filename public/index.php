@@ -1,7 +1,12 @@
 <?php
-  require_once '../app/enterlead.php';
-  //enterlead($_POST);
-  ?>
+$MSK_PARTNERS = (bool)($_SERVER['HTTP_HOST']=='msk.partners-kupikupon.ru');
+require_once '../app/enterlead.php';
+//enterlead($_POST);
+if ($MSK_PARTNERS) {
+    $html = include('index2.php');
+    die($html);
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>

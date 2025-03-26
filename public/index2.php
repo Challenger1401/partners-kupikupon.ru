@@ -17,6 +17,15 @@
   <!-- end -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js?render=<?=$RECAPTCHA_SITE_KEY;?>"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('<?=$RECAPTCHA_SITE_KEY;?>').then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -166,6 +175,17 @@
       </div>
     </header>
     <main class="app">
+      <?php if (isset($_GET['success'])) { ?>
+      <div class="modal">
+        <div class="modal__wrap">
+          <div class="modal__inner">
+            <div class="modal__title">Спасибо</div>
+            <div class="modal__subtitle">Заявка принята, в ближайшее время с вами свяжется наш менеджер!</div>
+            <a href="/"><span class="button button-green button-success">Хорошо</span></a>
+          </div>
+        </div>
+      </div>
+      <?php } ?>
       <section id="hero" class="section section-hero">
         <div class="container">
           <div class="b-hero">
@@ -793,58 +813,68 @@
             <div class="b-form__title">Заполни форму и мы обязательно свяжемся с тобой!</div>
             <div class="b-form__subtitle">Поля, выделенные <span>зелёной рамкой, обязательны для заполнения</span></div>
             <div class="b-form__inner">
-              <form action="#">
-                <div class="b-form__row">
-                  <div class="b-form__col">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Номер телефона" required="">
-                    </div>
-                  </div>
-                  <div class="b-form__col">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="E-mail" required="">
-                    </div>
-                  </div>
-                  <div class="b-form__col">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Имя" required="">
-                    </div>
-                  </div>
-                  <div class="b-form__col">
-                    <div class="form-group">
-                      <select class="form-select" aria-label="Город" required="">
-                        <option selected="">Город</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="b-form__col w-66">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Комментарий">
-                    </div>
+              <form action="/" method="post">
+              <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
+              <div class="b-form__row">
+                <div class="b-form__col">
+                  <div class="form-group">
+                    <input type="text" name="phone" class="form-control" placeholder="Номер телефона" required="">
                   </div>
                 </div>
-                <div class="b-form__row">
-                  <div class="b-form__col b-form__col-button w-50">
-                    <div class="form-group form-check">
-                      <label class="custom-checkbox">
-                        <input type="checkbox" value="value-1">
-                        <span>Отправляя настоящую заявку, я даю&nbsp;согласие&nbsp;на обработку моих персональных
-                          данных, указанных в заявке, и подтверждаю, что данные введены верно</span>
-                      </label>
-                    </div>
-                    <button type="submit" class="button button-green">Отправить заявку</button>
-                  </div>
-                  <div class="b-form__col b-form__col-tariff w-50">
-                    <div class="b-form__col-tariff--link">
-                      <a href="https://kupikupon.ru/files/kk_lite_pricelist.pdf" target="_blank">Тарифы на размещение</a>
-                    </div>
-                    <a href="#" class="button button-blue">Договор для акции</a>
-                    <a style="margin-top: 16px;" href="https://kupikupon.ru/files/KupiKupon-Presentation.pdf" class="button button-blue">Медиакит</a>
+                <div class="b-form__col">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required="">
                   </div>
                 </div>
+                <div class="b-form__col">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" placeholder="Имя" required="">
+                  </div>
+                </div>
+                <div class="b-form__col">
+                  <div class="form-group">
+                    <input type="text" name="city" class="form-control" placeholder="Город" required="">
+                    <!--select-- class="form-select" aria-label="Город" required="">
+                      <option selected="">Город</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      </select-->
+                  </div>
+                </div>
+                <div class="b-form__col w-66">
+                  <div class="form-group">
+                    <input type="text" name="company" class="form-control" placeholder="Название компании">
+                  </div>
+                </div>
+                <div class="b-form__col">
+                  <div class="form-group">
+                    <input type="text" name="site" class="form-control" placeholder="Сайт">
+                  </div>
+                </div>
+                <div class="b-form__col w-66">
+                  <div class="form-group">
+                    <input type="text" name="comment" class="form-control" placeholder="Комментарий">
+                  </div>
+                </div>
+              </div>
+              <div class="b-form__row">
+                <div class="b-form__col b-form__col-button w-50">
+                  <div class="form-group form-check">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" value="value-1" checked>
+                      <span>Отправляя настоящую заявку, я даю&nbsp;согласие&nbsp;на обработку моих персональных
+                        данных, указанных в заявке, и подтверждаю, что данные введены верно</span>
+                    </label>
+                  </div>
+                  <button type="submit" class="button button-green">Отправить заявку</button>
+                </div>
+                <div class="b-form__col b-form__col-tariff w-50">
+                  <div class="b-form__col-tariff--link"><a href="https://kupikupon.ru/files/kk_lite_pricelist.pdf"
+                                                           target="_blank">Тарифы на размещение</a></div>
+                  <a href="https://kupikupon.ru/files/kk_license_contract.pdf" target="_blank" class="button button-blue">Договор для акции</a>
+                </div>
+              </div>
               </form>
             </div>
           </div>

@@ -1,9 +1,11 @@
 <?php
 
-function enterlead($post){
+function enterlead($post, $is_msk=false){
     //die(var_dump($post));
     if (!sizeof($post)) return;
     $ch = curl_init();
+    $from = 'Kupikupon-part.ru';
+    if ($is_msk) $from = 'Kupikupon-part (msk).ru';
 
     $post_field = array(
         'city' => $_POST['city'],
@@ -13,7 +15,7 @@ function enterlead($post){
         'company' => $_POST['company'],
         'site' => $_POST['site'],
         //'activity' => $_POST['sfera'],
-        'from' => 'Kupikupon-part.ru',
+        'from' => $from,
         'comments' => $_POST['comment'],
         'ip' => $_SERVER['REMOTE_ADDR']
     );
@@ -48,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptchaResponse']))
 
     // Выводим результат исходя из полученных данных
     if ($recaptcha->score >= 0.5) {
-        enterlead($_POST);
+        enterlead($_POST, $MSK_PARTNERS);
     } else {
         // Код вывода ошибки
     }
