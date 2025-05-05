@@ -187,7 +187,7 @@ if ($MSK_PARTNERS) {
                   <li><a href="#facts">Кто мы?</a></li>
                   <li><a href="#tasks">Для чего?</a></li>
                   <li><a href="#cases">Кейсы</a></li>
-                  <li><a href="#tariffs">Тарифы</a></li>
+                  <!--li><a href="#tariffs">Тарифы</a></li-->
                   <li><a href="#reviews">Отзывы</a></li>
                   <li><a href="#faq">Вопросы</a></li>
                 </ul>
@@ -1361,7 +1361,7 @@ if ($MSK_PARTNERS) {
             </div>
           </div>
         </section>
-        <section id="tariffs" class="section section-tariffs">
+        <!--section id="tariffs" class="section section-tariffs">
           <div class="container">
             <div class="b-tariffs">
               <h2 class="w-990">Тарифы</h2>
@@ -1511,7 +1511,7 @@ if ($MSK_PARTNERS) {
               </div>
             </div>
           </div>
-        </section>
+        </section-->
         <section id="reviews" class="section section-reviews">
           <div class="container">
             <div class="b-reviews">

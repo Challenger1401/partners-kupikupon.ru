@@ -5,7 +5,7 @@ function enterlead($post, $is_msk=false){
     if (!sizeof($post)) return;
     $ch = curl_init();
     $from = 'Kupikupon-part.ru';
-    if ($is_msk) $from = 'Kupikupon-part (msk).ru';
+    if ($is_msk) $from = 'Msk.Kupikupon-part.ru';
 
     $post_field = array(
         'city' => $_POST['city'],
