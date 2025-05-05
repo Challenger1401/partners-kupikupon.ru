@@ -33,7 +33,6 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
     padding: 30px 50px 40px 40px;
   }
 
@@ -57,7 +56,8 @@
 
 @media (width >=1140px) {
   .b-price {
-    padding: 75px 50px 75px 147px;
+    align-items: center;
+    padding: 30px 50px 40px 147px;
   }
   
   .b-price__text {
