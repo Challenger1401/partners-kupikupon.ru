@@ -1512,6 +1512,21 @@ if ($MSK_PARTNERS) {
             </div>
           </div>
         </section-->
+          <section class="section-price">
+              <div class="container">
+                  <h2 class="w-990">Стоимость размещения</h2>
+                  <div class="b-price">
+                      <div class="b-price__text">
+                          <div class="b-text-gradient"><span>от 10000 ₽</span></div>
+                          <div>Точная стоимость размещения акции зависит от бизнес-требований</div>
+                      </div>
+                      <div class="b-price__img"><img src="images/money.png" alt=""></div>
+                      <div class="b-price__button">
+                          <div><a class="button button-yellow" href="#form">Получить консультацию</a></div>
+                      </div>
+                  </div>
+              </div>
+          </section>
         <section id="reviews" class="section section-reviews">
           <div class="container">
             <div class="b-reviews">
