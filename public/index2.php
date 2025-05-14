@@ -898,7 +898,7 @@
                         данных, указанных в заявке, и подтверждаю, что данные введены верно</span>
                     </label>
                   </div>
-                  <button type="submit" class="button button-green">Отправить заявку</button>
+                  <button type="submit" class="button button-green" onclick="_tmr.push({ type: 'reachGoal', id: 3631639, goal: 'lid'});">Отправить заявку</button>
                 </div>
                 <div class="b-form__col b-form__col-tariff w-50">
                   <div class="b-form__col-tariff--link"><a href="https://kupikupon.ru/files/kk_lite_pricelist.pdf"
